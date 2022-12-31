@@ -10,7 +10,7 @@ from zipfile import ZipFile
 
 class Methods:
 
-    def __init__(self, mode: str="main", image: any=None, rotation_flag: bool=False, noise_flag: bool=False):
+    def __init__(self, mode: str="main", image: any=None, rotation_flag: bool=True, noise_flag: bool=False):
         self.__image = image
         self.rotation_flag = rotation_flag
         self.remove_noise_flag = noise_flag
@@ -150,9 +150,9 @@ class Methods:
         print(img_np)
         return img_np
 
-    def run_methods(self, objects):
+    def run_methods(self, methods):
         
-        if 'Rotation' in objects:
+        if 'rotation' in methods:
             self.rotation_flag = True 
-        if 'Remove Noise' in objects:
+        if 'noise' in methods:
             self.remove_noise_flag = True

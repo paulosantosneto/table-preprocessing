@@ -2,6 +2,8 @@
 
 The objective is to perform pre-processing on documents that contain tables, performing rotations and noise removal. In this way, it is possible to improve the results of detection and structural recognition of tables even for large tabular extraction models.
 
+![](https://github.com/paulosantosneto/table-preprocessing/blob/main/app.gif)
+
 # Instalation
 
 Create a virtual environment.
